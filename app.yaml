@@ -1,0 +1,4 @@
+runtime: nodejs20
+env_variables:
+  GEMINI_API_KEY: "AIzaSyCQTuegqbJAvju_hn_vWbyJL9nm8un9dro"
+  PORT: "8080"
