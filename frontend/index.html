@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoteWise AI - Smart Voter Education</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="glass-header">
+      <h1>VoteWise AI 🗳️</h1>
+      <p>Smart Voter Education Assistant</p>
+      <button id="lang-toggle">🌐 EN / HI</button>
+    </header>
+
+    <main>
+      <!-- Navigation Tabs -->
+      <nav class="tabs">
+        <button class="tab-btn active" data-target="quiz-section">Knowledge Quiz</button>
+        <button class="tab-btn" data-target="chat-section">AI Chatbot</button>
+        <button class="tab-btn" data-target="news-section">Misinformation Scanner</button>
+      </nav>
+
+      <!-- Section: Quiz -->
+      <section id="quiz-section" class="content-section active glass-panel">
+        <h2>Voter Awareness Quiz</h2>
+        <div id="quiz-container">
+            <!-- Quiz questions injected here -->
+        </div>
+        <button id="submit-quiz" class="hidden">Submit Quiz</button>
+        <div id="quiz-results" class="hidden">
+            <h3>Your Score: <span id="score-display"></span>%</h3>
+            <div id="personalized-learning"></div>
+            <br>
+            <button id="retry-btn">Retry Quiz</button>
+        </div>
+      </section>
+
+      <!-- Section: Chatbot -->
+      <section id="chat-section" class="content-section glass-panel hidden">
+        <h2>Ask the AI Assistant</h2>
+        <div class="chat-box" id="chat-box">
+           <div class="message ai-message">Hello! I am VoteWise AI. How can I help you with your voting questions today?</div>
+        </div>
+        <div class="input-area">
+          <input type="text" id="chat-input" placeholder="Type your question here...">
+          <button id="send-chat">Send</button>
+        </div>
+      </section>
+
+      <!-- Section: Misinformation Scanner -->
+      <section id="news-section" class="content-section glass-panel hidden">
+        <h2>Misinformation & Fake News Scanner</h2>
+        <p>Paste a claim or news excerpt below, and I will analyze its authenticity.</p>
+        <textarea id="news-input" rows="4" placeholder="E.g., 'You can now vote via SMS...'"></textarea>
+        <br><br>
+        <button id="scan-btn">Analyze Claim</button>
+        <div id="scan-results" class="hidden">
+            <p><strong>Authenticity:</strong> <span id="res-auth"></span></p>
+            <p><strong>Bias:</strong> <span id="res-bias"></span></p>
+            <p><strong>Confidence:</strong> <span id="res-conf"></span>%</p>
+            <p id="res-details"></p>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "question": "What is an EVM?",
+    "options": ["Electronic Voting Machine", "Election Validation Method", "Electronic Voter Material"],
+    "answer": 0
+  },
+  {
+    "id": 2,
+    "question": "Which document is required to vote?",
+    "options": ["Library Card", "Voter ID Card", "Credit Card"],
+    "answer": 1
+  },
+  {
+    "id": 3,
+    "question": "Can you vote online in a general election in most countries?",
+    "options": ["Yes, always", "No, usually it requires going to a polling station or mail-in ballot", "Only on weekends"],
+    "answer": 1
+  },
+  {
+    "id": 4,
+    "question": "What is a 'secret ballot'?",
+    "options": ["A vote cast anonymously", "A hidden election", "A vote that is never counted"],
+    "answer": 0
+  },
+  {
+    "id": 5,
+    "question": "Who is eligible to vote?",
+    "options": ["Any person over 18 who is a citizen and registered", "Anyone who pays taxes", "Anyone living in the country"],
+    "answer": 0
+  }
+]
